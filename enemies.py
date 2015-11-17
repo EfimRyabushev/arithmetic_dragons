@@ -1,4 +1,4 @@
-# coding: utf-8
+ # coding: utf-8
 # license: GPLv3
 from gameunit import *
 from random import randint, choice
@@ -48,7 +48,7 @@ class BlackDragon(Dragon):
     def question(self):
         x = randint(200,300)
         y = randint(200,300)
-        self.__quest = str(x) + '+' + str(y)
+        self.__quest = str(x) + '*' + str(y)
         self.set_answer(x * y)
         return self.__quest
 
@@ -61,7 +61,7 @@ class RedDragon(Dragon):
     def question(self):
         x = randint(100,200)
         y = randint(100,200)
-        self.__quest = str(x) + '+' + str(y)
+        self.__quest = str(x) + '-' + str(y)
         self.set_answer(x - y)
         return self.__quest
 
